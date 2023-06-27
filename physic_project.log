@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  27 JUN 2023 21:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  27 JUN 2023 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1371,17 +1371,17 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 259--271
+Underfull \hbox (badness 10000) in paragraph at lines 265--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--271
+Underfull \hbox (badness 10000) in paragraph at lines 265--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--271
+Underfull \hbox (badness 10000) in paragraph at lines 265--277
 
  []
 
@@ -1402,13 +1402,13 @@ LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
  ***********
 Package rerunfilecheck Info: File `physic_project.out' has not changed.
-(rerunfilecheck)             Checksum: 7AEB0E4F63ACCB61C84A483D7B1C867E;1643.
+(rerunfilecheck)             Checksum: 3124BB2BB1D253DE20070696CCA8EE6C;2169.
  ) 
 Here is how much of TeX's memory you used:
- 51638 strings out of 475734
- 1291263 string characters out of 5786229
+ 51641 strings out of 475734
+ 1291306 string characters out of 5786229
  1990483 words of memory out of 5000000
- 71743 multiletter control sequences out of 15000+600000
+ 71744 multiletter control sequences out of 15000+600000
  531368 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,89p,1041b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1432,10 +1432,10 @@ exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/
 fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type
 1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/c
 m-super/sfti1200.pfb>
-Output written on physic_project.pdf (6 pages, 314980 bytes).
+Output written on physic_project.pdf (6 pages, 316831 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
