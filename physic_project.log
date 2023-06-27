@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  27 JUN 2023 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  27 JUN 2023 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1360,26 +1360,9 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [3]
-Underfull \hbox (badness 10000) detected at line 205
- []$[]  \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ^^
-Y^^ZR[]v \OMS/cmsy/m/n/10 ^^A [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ma[][]v[] \
-OT1/cmr/m/n/10 = \OML/cmm/m/it/10 v[]sin [] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/
-10 cos []$ [][]  
- []
-
-
-Underfull \hbox (badness 10000) detected at line 208
- []$[]  \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ^^
-Y^^ZR[]v \OMS/cmsy/m/n/10 ^^A [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ma[][]v[] \
-OT1/cmr/m/n/10 = \OML/cmm/m/it/10 v[]sin [] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/
-10 sin []$ [][]  
- []
-
-
-Underfull \hbox (badness 10000) detected at line 211
- []$[]  \OML/cmm/m/it/10 mg \OT1/cmr/m/n/10 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/1
-0 6\OML/cmm/m/it/10 ^^Y^^ZR[]v \OMS/cmsy/m/n/10 ^^A [] \OT1/cmr/m/n/10 = \OML/c
-mm/m/it/10 ma[][]v[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 v[]cos []$ [][]  
+Overfull \hbox (0.6622pt too wide) in paragraph at lines 247--249
+\T2A/cmr/m/n/10 был при-ме-нен \T2A/cmr/m/it/10 ме-тод Ёй-ле-ра \T2A/cmr/m/n/10
+ чис-лен-но-го ре-ше-ни€ диф-фе-рен-ци-аль-ных урав-
  []
 
 
@@ -1388,67 +1371,32 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 259--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--271
+
+ []
+
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [5]
-Overfull \hbox (26.64236pt too wide) detected at line 310
- []$[]   []$ []  
- []
-
-
-Underfull \hbox (badness 10000) detected at line 318
- []$[]   []$ [][]  
- []
-
-
-Underfull \hbox (badness 10000) detected at line 326
- []$[]   []$ [][]  
- []
-
-
-Overfull \hbox (23.19574pt too wide) detected at line 334
- []$[]   []$ []  
- []
-
-
-Underfull \hbox (badness 4479) detected at line 347
- []$[]   [] \OMS/cmsy/m/n/10 ! []$ [][]  
- []
-
-
-Overfull \hbox (22.07722pt too wide) detected at line 357
- []$[]   []$ []  
- []
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 362--374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--374
-
- []
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[7] (./physic_project.aux)
+[6] (./physic_project.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
@@ -1457,39 +1405,37 @@ Package rerunfilecheck Info: File `physic_project.out' has not changed.
 (rerunfilecheck)             Checksum: 7AEB0E4F63ACCB61C84A483D7B1C867E;1643.
  ) 
 Here is how much of TeX's memory you used:
- 51659 strings out of 475734
- 1291529 string characters out of 5786229
- 1997483 words of memory out of 5000000
+ 51638 strings out of 475734
+ 1291263 string characters out of 5786229
+ 1990483 words of memory out of 5000000
  71743 multiletter control sequences out of 15000+600000
  531368 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,89p,1041b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,89p,1041b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
-fb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2023/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/typ
-e1/public/cm-super/sfbi1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
-cm-super/sfbx1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
-fbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
-b><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texl
-ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/t
-exmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2023/texmf-dist/
-fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/fonts/type
-1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/c
-m-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sf
-ti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
->
-Output written on physic_project.pdf (7 pages, 342957 bytes).
+ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
+cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
+frm0700.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type
+1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/c
+m-super/sfti1200.pfb>
+Output written on physic_project.pdf (6 pages, 314980 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

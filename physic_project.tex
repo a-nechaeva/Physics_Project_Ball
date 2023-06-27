@@ -183,71 +183,54 @@ $ v_\tau$ -- проекция скорости на касательную к э
 \vec{F}_{\text{Магнуса}} = - \rho \vec{\Gamma} \times \vec{u}_\infty = - \rho  \frac{8 \pi \vec{\omega} }{3}  R^3  \times -\vec{v} = \frac{8 \pi }{3} \rho R^3 \vec{\omega} \times \vec{v}  
 \end{equation}
 
-Выведем формулу для силы Магнуса, пусть $\Delta p $ - возникающая разность давлений на стороны шара, $S$ - площадь половины шара,  $k$ - коэффициент подъемной силы (\textit{для шара около 0.6}), тогда
-\begin{equation}
-F_{\text{Магнуса}}= \Delta p \cdot S\cdot k = 2 \pi \cdot R^{2} \cdot \Delta p \cdot k
-\end{equation}
-Применим следствие из уравнения Бернулли $\Delta p = \frac{\rho}{2} \left( v^{2}_{1}- v^{2}_{2} \right)$ и обозначим за $v$ линейную скорость тела относительно среды, $v_{\text{п}}$ - набегающего потока, получим
-\begin{equation}
-F_{\text{Магнуса}}= 2 \pi \cdot R^{2} \cdot \frac{\rho}{2} v v_{\text{п}} \cdot k = 0.6 \pi \rho  R^{2}  v v_{\text{п}}
-\end{equation}
-Запишем формулу для силы, создаваемой эффектом Магнуса в векторной форме
-\begin{equation}
-\vec{F}_{\text{Магнуса}}= 0.6 \pi \rho  R^{2} v v_{\text{п}} \cdot  \frac{   \vec{v}_{\text{п}} \times \vec{\omega}}{ v_{\text{п}} \cdot \omega} = 0.6 \pi \rho  R^{2} v  \cdot  \frac{   \vec{v}_{\text{п}} \times \vec{\omega}}{  \omega}
-\end{equation}
-Получим уравнение, описывающее движение мяча
-\begin{equation}
-m \vec{g}  +0.6 \pi \rho  R^{2} v  \cdot  \frac{   \vec{v}_{\text{п}} \times \vec{\omega}}{  \omega} = m \vec{a}
-\end{equation}
 В общем случае будем рассматривать движение мяча в \textit{Декартовой системе координат}, в \textit{трехмерном пространстве}, тогда проекции на оси $X$, $Y$ и $Z$ соотвественно
+\begin{equation}
+\begin{cases}
+ m \ddot{x} =  \frac{8 \pi }{3} \rho R^3 \left( \vec{\omega} \times  \vec{v} \right)_{x} \, ,\\
+ m \ddot{y} = \frac{8 \pi }{3} \rho R^3 \left( \vec{\omega} \times  \vec{v} \right)_{y} \, ,\\
+ \ddot{z} = g
+\end{cases}
+\end{equation}
+
+
+Перейдем к уравнениям для угловой скорости вращения мяча $ \omega $, в частности, найдем выражения для разложения   $ \left( \vec{\omega} \times  \vec{v} \right) $ по единичным векторам, задающим оси координат, $ \vec{i}$, $ \vec{j}$ и $ \vec{k}$
 \begin{multline}
-0.6 \pi \rho  R^{2} v  \cdot  \frac{  \left( \vec{v}_{\text{п}} \times \vec{\omega} \right)_{x}}{  \omega} = m a_{x} \text{ , } v_{x} = v_0 sin \left( \alpha \right) \cdot cos  \left( \beta \right)
-\end{multline}
-\begin{multline}
-0.6 \pi \rho  R^{2} v  \cdot  \frac{  \left( \vec{v}_{\text{п}} \times \vec{\omega} \right)_{y}}{  \omega} = m a_{y} \text{ , } v_{y} = v_0 sin \left( \alpha \right) \cdot sin  \left( \beta \right)
-\end{multline}
-\begin{multline}
-m g +0.6 \pi \rho  R^{2} v  \cdot  \frac{  \left( \vec{v}_{\text{п}} \times \vec{\omega} \right)_{z}}{  \omega} = m a_{z} \text{ , } v_{z} = v_0 cos \left( \alpha \right)
-\end{multline}
-Перейдем к уравнениям для угловой скорости вращения мяча $ \omega $, в частности, найдем выражения для разложения   $ \left( \vec{v}_{\text{п}} \times \vec{\omega} \right) $ по единичным векторам, задающим оси координат, $ \vec{i}$, $ \vec{j}$ и $ \vec{k}$
-\begin{multline}
-\left( \vec{v}_{\text{п}} \times \vec{\omega} \right) = 
+\left(  \vec{\omega} \times  \vec{v} \right) = 
 \begin{vmatrix}
 \vec{i} & \vec{j} & \vec{k} \\
-v_{\text{п}_{x}} & v_{\text{п}_{y}} & v_{\text{п}_{z}} \\
-\omega _{x} & \omega _{y} & \omega _{z}
+\omega _{x} & \omega _{y} & \omega _{z} \\
+v_{x} & v_{y} & v_{z}
 \end{vmatrix}
 = \vec{i} 
 \begin{vmatrix}
- v_{\text{п}_{y}} & v_{\text{п}_{z}} \\
-\omega _{y} & \omega _{z}
+\omega _{y} & \omega _{z} \\
+v_{y} & v_{z}
 \end{vmatrix}
 - \vec{j}
 \begin{vmatrix}
- v_{\text{п}_{x}} & v_{\text{п}_{z}} \\
-\omega _{x} & \omega _{z}
+\omega _{x} & \omega _{z} \\
+v_{x} & v_{z}
 \end{vmatrix}
 + \vec{k}
 \begin{vmatrix}
- v_{\text{п}_{x}} & v_{\text{п}_{y}} \\
-\omega _{x} & \omega _{y}
+\omega _{x} & \omega _{y} \\
+v_{x} & v_{y}
 \end{vmatrix}
 =\\
-= \vec{i}  \left( v_{\text{п}_{y}} \omega _{z} - \omega _{y} v_{\text{п}_{z}} \right) + \vec{j} \left( \omega _{x} v_{\text{п}_{z}} - v_{\text{п}_{x}} \omega _{z} \right) + \vec{k} \left(  v_{\text{п}_{x}} \omega _{y} - \omega _{x} v_{\text{п}_{y}} \right) \to \\
-\to \left( \vec{v}_{\text{п}} \times \vec{\omega} \right)_{x} = v_{\text{п}_{y}} \omega _{z} - \omega _{y} v_{\text{п}_{z}}\\
- \left( \vec{v}_{\text{п}} \times \vec{\omega} \right)_{y} = \omega _{x} v_{\text{п}_{z}} - v_{\text{п}_{x}} \omega _{z}\\
- \left( \vec{v}_{\text{п}} \times \vec{\omega} \right)_{z} =  v_{\text{п}_{x}} \omega _{y} - \omega _{x} v_{\text{п}_{y}}\\
+= \vec{i}  \left(\omega _{y} v_{z} -  \omega _{z} v_{y}  \right) + \vec{j} \left( \omega _{z} v_{x} - \omega _{x} v_{z}   \right) + \vec{k} \left( \omega _{x} v_{y} -  \omega _{y} v_{x}   \right) \to \\
+\to \left( \vec{\omega} \times  \vec{v}\right)_{x} = \omega _{y} v_{z} -  \omega _{z} v_{y}  =  -  \omega _{z} v_{y}  \\
+ \left( \vec{\omega} \times  \vec{v} \right)_{y} = \omega _{z} v_{x} - \omega _{x} v_{z} =  \omega _{z} v_{x}\\
+ \left( \vec{\omega} \times  \vec{v} \right)_{z} = \omega _{x} v_{y} -  \omega _{y} v_{x} = 0 \\
 \end{multline}
-Перейдем к дифференциальному виду уравнений проекций движения мяча на оси координат
+Перейдем к дифференциальному виду уравнений проекций движения мяча на оси координат:
 \begin{equation}
-0.6 \pi \rho  R^{2} v  \cdot  \frac{ v_{\text{п}_{y}} \omega _{z} - \omega _{y} v_{\text{п}_{z}}}{  \sqrt{\omega _{x}^2+\omega _{y}^2+\omega _{z}^2}} = m x''
+\begin{cases}
+ m \ddot{x} = - \frac{8 \pi }{3} \rho R^3  \omega _{z} v_{y} \, ,\\
+ m \ddot{y} = \frac{8 \pi }{3} \rho R^3 \omega _{z} v_{x} \, ,\\
+ \ddot{z} = g
+\end{cases}
 \end{equation}
-\begin{equation}
-0.6 \pi \rho  R^{2} v  \cdot  \frac{ \omega _{x} v_{\text{п}_{z}} - v_{\text{п}_{x}} \omega _{z}}{ \sqrt{\omega _{x}^2+\omega _{y}^2+\omega _{z}^2}} = m y''
-\end{equation}
-\begin{equation}
-m g_{z}+0.6 \pi \rho  R^{2} v  \cdot  \frac{v_{\text{п}_{x}} \omega _{y} - \omega _{x} v_{\text{п}_{y}} }{ \sqrt{\omega _{x}^2+\omega _{y}^2+\omega _{z}^2}} = m z''
-\end{equation}
+
 Запишем также начальные условия задачи, координаты мяча -- положение его центра масс во времени
 \begin{equation}
 \begin{cases}
@@ -261,100 +244,14 @@ v_{z} (0) = v_{0z}\\
 \end{cases}
 \end{equation}
 \subsection{Решение дифференциальных уравнений}
-Найдем зависимости $x(t)$, $y(t)$, $z(t)$, решив соотвествующую систему дифференциальных уравнений.\\
-Будем считать, что ветра нет, поэтому скорость потока противоположна по направлению изменению линейной координаты мяча вдоль соответствующей оси $v_{\text{п}_{i}} = -i'$.
+Для решения соотвествующей системы дифференциальных уравнений был применен \textit{метод Эйлера} численного решения дифференциальных уравнений. Описание метода:\\
+\textit{Пусть дана задача Коши для уравнения первого порядка}:
+$$ \frac{dy}{dx} = f(x, y), \, \left. y \right|_{x = x_0} = y_0 \, ,$$
+\textit{где функция} $f$ \textit{определена на некоторой области} $D \in R^2$. \textit{Решение ищется на полуинтервале} $(x_0, b]$. \textit{На этом промежутке введем узлы} $x_0 < x_1 < ... < x_n \leq b$. \textit{Приближенное решение в узлах} $x_i$, \textit{которое обозначим через} $y_i$,  \textit{определяется по формуле}
+$$y_i = y_{i-1} + (x_i - x_{i-1}) f(x_{i-1}, y_{i-1}), \, \, \, i = 1, 2, 3, ..., n.$$
+\textit{Эти формулы непосредственно обобщаются на случай систем обыкновенных дифференциальных уравнений.}\\
+В данной работе для нахождения численного решения системы линейных однородных уравнений второго порядка метод Эйлера был применен последовательно: сначала для вычисления первой производной, а затем на основе полученного результата -- второй производной.
 
-
-\begin{equation}
-\begin{cases}
-- 0.6 \pi \rho  R^{2} v \cdot  y' = m x''\\
-0.6 \pi \rho  R^{2} v \cdot   x'  = m y''\\
--m g  = m z''
-\end{cases}
-\end{equation}
-
-Тогда элементарно
-\begin{equation}
-z(t)= - \frac{gt^2}{2}+C_1 \cdot t + C_2
-\end{equation}
-Будем считать, что мяч запускается с земли, то есть $z(0) = C_2 = 0$. Несложно заметить, что коэффициент $C_1$ соотвествует проекции линейной скорости мяча на ось $z$, так $C_1 = v_0 cos \left( \alpha \right)$. Тогда зависимости координаты $z(t)$ будет соотвествовать выражение 
-\begin{equation}
-z(t)=  v_0 cos \left( \alpha \right) \cdot t - \frac{gt^2}{2} =  v_{0_z} \cdot t -  \frac{gt^2}{2} 
-\end{equation}
-Решение системы дифференциальных уравнений найдем, выразив поочередно  $x$ через $y$ и соотвественно наоборот. 
-\begin{equation}
-\begin{cases}
-  - 0.6 \pi \rho  R^{2} v \cdot  y' = m x''\\
-    0.6 \pi \rho  R^{2} v  \cdot   x'  = m y''
-\end{cases}
-\to
-\begin{cases}
-    y' = - \frac{m x''}{ 0.6 \pi \rho  R^{2} v}\\
-    \left(0.6 \pi \rho  R^{2} v \right)^2 \cdot   x'  = -m^2x''
-\end{cases}
-\end{equation}
-Отсюда получаем
-\begin{equation}
-x(t) = C_2 \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) +  C_1 \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) + C
-\end{equation}
-Аналогичное выражение получаем для $y$
-\begin{equation}
-y(t) = C_5 \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) +  C_4 \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) + C_3
-\end{equation}
-
-\begin{multline}
-\begin{cases}
-x(0) =  C_1 + C = 0 \to x(t) = C_2 \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) -  C \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) + C \\
-y(0) =  C_4 + C_3 = 0 \to  y(t) = C_5 \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) -  C_3 \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) + C_3\\
-\end{cases}
-\end{multline}
-
-
-\begin{multline}
-\begin{cases}
-x'(t) = C_2 \frac{0.6 \pi \rho  R^{2} v}{m} \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) +  C\frac{0.6 \pi \rho  R^{2} v}{m} \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) \\
-y'(t) = C_5 \frac{0.6 \pi \rho  R^{2} v}{m} \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) +  C_3 \frac{0.6 \pi \rho  R^{2} v}{m} \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right)\\
-\end{cases}
-\end{multline}
-
-
-\begin{multline}
-\begin{cases}
-x'(0) = C_2 \frac{0.6 \pi \rho  R^{2} v}{m} = v_{x_0} \to C_2 = \frac{ v_{x_0} m }{0.6 \pi \rho  R^{2} v} \\
-y'(0) = C_5 \frac{0.6 \pi \rho  R^{2} v}{m} =  v_{y_0} \to C_5 = \frac{ v_{y_0} m }{0.6 \pi \rho  R^{2} v}\\
-\end{cases}
-\end{multline}
-
-
-\begin{multline}
-\begin{cases}
-x''(t) = - C_2 \left( \frac{0.6 \pi \rho  R^{2} v}{m}\right)^2 \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) +  C\left(\frac{0.6 \pi \rho  R^{2} v}{m}\right)^2 \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) \\
-y''(t) = - C_5 \left( \frac{0.6 \pi \rho  R^{2} v}{m}\right)^2 \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) +  C_3 \left( \frac{0.6 \pi \rho  R^{2} v}{m}\right)^2 \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right)\\
-\end{cases}
-\end{multline}
-
-
-\begin{multline}
-\begin{cases}
-x''(0) =  C\left(\frac{0.6 \pi \rho  R^{2} v}{m}\right)^2 = \omega^2 \cdot R \\
-y''(0) =  C_3 \left( \frac{0.6 \pi \rho  R^{2} v}{m}\right)^2 = -\omega^2 \cdot R \\
-\end{cases}
-\to
-\begin{cases}
-C=\frac{ \omega^2}{\left( \frac{0.6 \pi \rho v}{m}\right)^2  R^3} \\
-C_3 = -\frac{ \omega^2}{\left( \frac{0.6 \pi \rho v}{m}\right)^2  R^3}
-\end{cases}
-\end{multline}
-Для упрощения рассчета будем считать, что $v = v_0$, $\omega = \omega_0$
-
-
-Запишем, полученные функции для координат $x$ и $y$
-\begin{multline}
-\begin{cases}
-x(t) = \frac{ v_{x_0} m }{0.6 \pi \rho  R^{2} v} \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) -\frac{ \omega^2}{\left( \frac{0.6 \pi \rho v}{m}\right)^2  R^3} \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) + \frac{ \omega^2}{\left( \frac{0.6 \pi \rho v}{m}\right)^2  R^3}\\
-y(t) = \frac{ v_{y_0} m }{0.6 \pi \rho  R^{2} v} \sin \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) + \frac{ \omega^2}{\left( \frac{0.6 \pi \rho v}{m}\right)^2  R^3} \cos \left(\frac{0.6 \pi \rho  R^{2} v \cdot t}{m} \right) - \frac{ \omega^2}{\left( \frac{0.6 \pi \rho v}{m}\right)^2  R^3}
-\end{cases}
-\end{multline}
 
 
 \section{Моделирование процесса}
