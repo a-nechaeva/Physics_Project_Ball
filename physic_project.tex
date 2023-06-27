@@ -113,16 +113,17 @@
 \vspace*{2ex}
 		
 		{\Large
-			по дисциплине "Механики"
+			по дисциплине "Механика"
 		}
 
 	\end{center}
 	\vspace*{20ex}
 	\begin{flushright}
 		{\large 
-			\underline{Выполнила}: студентка гр. \textbf{R3138}\\
+			\underline{Выполнили}: студенты\\
 			\begin{flushright}
 				\textbf{Нечаева А.А.}\\
+                                \textbf{Попов В.?.}\\
 			\end{flushright}
 		}
 		
@@ -162,6 +163,26 @@
 \begin{equation}
 \vec{F}_{\text{тяжести}} + \vec{F}_{\text{Магнуса}}= m \cdot \vec{a}
 \end{equation}
+Пусть шар находится в потоке набегающего не него идеального газа. Скорость потока на бесконечности $\vec{u}_\infty$. Чтобы сымитировать вращение шара, введем циркуляцию скорости $\Gamma$ вокруг него. Исходя из закона Бернулли, можно получить, что полная сила, действующая в таком случае на шар, равна:
+\begin{equation}
+\vec{R}= - \rho \vec{\Gamma} \times \vec{u}_\infty \, ,
+\end{equation}
+где $ \vec{u}_\infty = -\vec{v}$ ($v$ -- линейная скорость мяча);  $\Gamma$ вычислим как
+\begin{equation}
+\Gamma = \oint \limits^{}_L v_\tau dS \, ,
+\end{equation}
+$ v_\tau$ -- проекция скорости на касательную к этой кривой, $dS$ -- элемент длины кривой. В случае шара запишем
+Запишем формулу для вычисления силы Магнуса в общем виде:
+\begin{multline}
+\Gamma = \int \limits^R_{-R} 2 \pi \omega (R^2 - x^2) \, dx = 2 \pi \omega \left. \left( R^2x - \frac{x^3}{3}\right)\right|^R_{-R} =\\
+=  2 \pi \omega  \left( R^3 - \frac{R^3}{3} +  R^3 - \frac{R^3}{3} \right) = 4 \pi \omega \frac{2 R^3 }{3} = \frac{8 \pi \omega}{3}  R^3  \, ,
+\end{multline}
+где $R$ -- радиус шара, $\omega$ -- заданная угловая скорость вращения мяча. Будем считать, что вектор угловой скорости задан вдоль 1 оси -- оси $Z$.\\
+Тогда запишем формулу для вычисления силы Магнуса:
+\begin{equation}
+\vec{F}_{\text{Магнуса}} = - \rho \vec{\Gamma} \times \vec{u}_\infty = - \rho  \frac{8 \pi \vec{\omega} }{3}  R^3  \times -\vec{v} = \frac{8 \pi }{3} \rho R^3 \vec{\omega} \times \vec{v}  
+\end{equation}
+
 Выведем формулу для силы Магнуса, пусть $\Delta p $ - возникающая разность давлений на стороны шара, $S$ - площадь половины шара,  $k$ - коэффициент подъемной силы (\textit{для шара около 0.6}), тогда
 \begin{equation}
 F_{\text{Магнуса}}= \Delta p \cdot S\cdot k = 2 \pi \cdot R^{2} \cdot \Delta p \cdot k
