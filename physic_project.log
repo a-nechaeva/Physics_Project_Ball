@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  28 JUN 2023 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  28 JUN 2023 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1458,7 +1458,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 <./graphics/xy_10_5_10_10.png, id=108, 425.59pt x 281.05pt>
 File: ./graphics/xy_10_5_10_10.png Graphic file (type png)
 <use ./graphics/xy_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/xy_10_5_10_10.png  used on input line 312.
+Package pdftex.def Info: ./graphics/xy_10_5_10_10.png  used on input line 311.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 
@@ -1467,7 +1467,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./graphics/xz_10_5_10_10.png, id=109, 425.59pt x 281.05pt>
 File: ./graphics/xz_10_5_10_10.png Graphic file (type png)
 <use ./graphics/xz_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/xz_10_5_10_10.png  used on input line 318.
+Package pdftex.def Info: ./graphics/xz_10_5_10_10.png  used on input line 317.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1475,7 +1475,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./graphics/yz_10_5_10_10.png, id=110, 425.59pt x 281.05pt>
 File: ./graphics/yz_10_5_10_10.png Graphic file (type png)
 <use ./graphics/yz_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/yz_10_5_10_10.png  used on input line 324.
+Package pdftex.def Info: ./graphics/yz_10_5_10_10.png  used on input line 323.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1483,7 +1483,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./graphics/xyz_10_5_10_10.png, id=111, 243.91125pt x 240.9pt>
 File: ./graphics/xyz_10_5_10_10.png Graphic file (type png)
 <use ./graphics/xyz_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/xyz_10_5_10_10.png  used on input line 330.
+Package pdftex.def Info: ./graphics/xyz_10_5_10_10.png  used on input line 329.
 
 (pdftex.def)             Requested size: 258.20877pt x 255.02194pt.
 
@@ -1492,7 +1492,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./graphics/xy_10_5_10_0.png, id=112, 425.59pt x 281.05pt>
 File: ./graphics/xy_10_5_10_0.png Graphic file (type png)
 <use ./graphics/xy_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/xy_10_5_10_0.png  used on input line 337.
+Package pdftex.def Info: ./graphics/xy_10_5_10_0.png  used on input line 336.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1500,7 +1500,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./graphics/xz_10_5_10_0.png, id=113, 425.59pt x 281.05pt>
 File: ./graphics/xz_10_5_10_0.png Graphic file (type png)
 <use ./graphics/xz_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/xz_10_5_10_0.png  used on input line 343.
+Package pdftex.def Info: ./graphics/xz_10_5_10_0.png  used on input line 342.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1508,7 +1508,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./graphics/yz_10_5_10_0.png, id=114, 425.59pt x 281.05pt>
 File: ./graphics/yz_10_5_10_0.png Graphic file (type png)
 <use ./graphics/yz_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/yz_10_5_10_0.png  used on input line 349.
+Package pdftex.def Info: ./graphics/yz_10_5_10_0.png  used on input line 348.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1516,7 +1516,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./graphics/xyz_10_5_10_0.png, id=115, 243.91125pt x 241.90375pt>
 File: ./graphics/xyz_10_5_10_0.png Graphic file (type png)
 <use ./graphics/xyz_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/xyz_10_5_10_0.png  used on input line 355.
+Package pdftex.def Info: ./graphics/xyz_10_5_10_0.png  used on input line 354.
 (pdftex.def)             Requested size: 258.20877pt x 256.08453pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1595,7 +1595,7 @@ onts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1
 m1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb>
 <c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on physic_project.pdf (12 pages, 525547 bytes).
+Output written on physic_project.pdf (12 pages, 525328 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  193 compressed objects within 2 object streams
