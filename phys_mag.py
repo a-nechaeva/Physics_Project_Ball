@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 from math import sin,pi, radians, cos, sqrt
+from mpl_toolkits.mplot3d import Axes3D
 
 v_x = 10
 v_y =5
@@ -114,6 +115,10 @@ plt.grid(which='major')
 plt.grid(which='minor', linestyle=':')
 plt.tight_layout()
 plt.show()
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.plot(Tuple[1], Tuple[3], Tuple[5], label='parametric curve')
                   
              
                
