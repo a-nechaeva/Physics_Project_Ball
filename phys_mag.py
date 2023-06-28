@@ -14,7 +14,7 @@ R = 0.11      # радиус сферы (м) (0.11 для футбольного
 m = 0.430      # масса мяча (кг) (0.430 для футбольного мяча) (0.055 для теннисного мяча)
 p = 1.225     # плотность воздуха (кг/м^3)
 
-w_z = 30 # скорость мяча угловая вдоль оси z
+w_z = 0 # скорость мяча угловая вдоль оси z
 alpha = pi/2      # Угол между v и w
 w_x = w_y = 0.0			
 g = 9.81
@@ -83,7 +83,7 @@ def constructor(lT,lX,lXPrim,lY,lYPrim,lZ,lZPrim,dt,C, R, p, v, wz, m, g, alpha)
 
 
 Tuple = constructor(lT,lX,lXPrim,lY,lYPrim,lZ,lZPrim,dt,C, R, p, v, w_z, m, g, alpha)
-plt.axis([-1,8,-1,20])
+plt.axis([-1,25,-1,20])
 # добавляем подписи к осям и заголовок диаграммы
 plt.xlabel('x, м', fontsize=16)
 plt.ylabel('y, м', fontsize=16)
@@ -98,7 +98,7 @@ plt.grid(which='minor', linestyle=':')
 plt.tight_layout()
 plt.show()
 
-plt.axis([0,8,-2,6])
+plt.axis([0,25,-2,6])
 plt.xlabel('x, м', fontsize=16)
 plt.ylabel('z, м', fontsize=16)
 plt.title('Проекция траектории полета мяча в плоскости XZ')
@@ -109,7 +109,7 @@ plt.grid(which='minor', linestyle=':')
 plt.tight_layout()
 plt.show()
 
-plt.axis([0,20,-2,10])
+plt.axis([0,15,-2,6])
 plt.xlabel('y, м', fontsize=16)
 plt.ylabel('z, м', fontsize=16)
 plt.title('Проекция траектории полета мяча в плоскости YZ')
