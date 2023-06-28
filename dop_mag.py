@@ -64,7 +64,7 @@ def tSuiv(t, dt):
     return t + dt
 
 def F_poisk(Xpr, Ypr, Rpr, R, p, m, v_z, g):
-    Yo = (Xpr**2 + Ypr**2 - Rpr**2)/((Ypr - Rpr) * 2)
+    Yo = (Xpr**2 + Ypr**2 - Rpr**2)/((Ypr - (Rpr * sqrt(Ypr ** 2) / Ypr)) * 2)
     Deg = (8 * pi * R**3 * p * Yo)/ (3 * m)   # отношение v/w
     KOF = (2 * Yo * Ypr)/(Xpr**2 + Ypr**2)
     S = Yo * 2 * asin((KOF * sqrt(Xpr**2 + Ypr**2))/(2 * Yo))

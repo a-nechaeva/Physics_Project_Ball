@@ -261,12 +261,54 @@ $$y_i = y_{i-1} + (x_i - x_{i-1}) f(x_{i-1}, y_{i-1}), \, \, \, i = 1, 2, 3, ...
 Молуль силы, действующей на мяч, постоянен, а ее вектор перпендикулярен скорости мяча в любой момент времени и лежит в плоскости $XY$, следовательно, траектория мяча представляет собой фрагмент окружности в плоскости  $XY$. \\
 Запишем центростремительное ускорение:
 \begin{equation}
-a_n = \frac{F}{m} = \frac{8\pi}{3m} \rho \omega v R^3
+a_n = \frac{F}{m} = \frac{8\pi}{3m} \rho \omega v R^3 = \frac{v^2}{r}, \,
+\end{equation}
+где $r$ -- радиус кривизны дуги, по которой движется мяч. Тогда
+\begin{equation}
+\frac{v}{\omega} =  \frac{8\pi}{3m} \rho r R^3 \to \omega (v) = \frac{v}{k}, \, k =  \frac{8\pi}{3m} \rho r R^3
 \end{equation}
 Пусть линейная скорость задана вдоль оси $X$, а препятствие представляет собой бесконечный цилиндр.\\
+На основе геометрической модели (рисунок ?) составим выражения:
+\begin{equation}
+|Y_0| - R_{\text{пр}} = O'B 
+\end{equation}
+\begin{equation}
+O'B = \sqrt{\left( Y_0 - Y_{\text{пр}} \right)^2 + X_{\text{пр}}^2} 
+\end{equation}
+Откуда выразим $Y_0$ -- радиус траектории мяча при касании препятствия:
+\begin{equation}
+Y_0 = \frac{X_{\text{пр}}^2 +  Y_{\text{пр}}^2 - R_{\text{пр}}^2 }{2 \left(  Y_{\text{пр}} - R_{\text{пр}} \right) \frac{\sqrt{ Y_{\text{пр}}^2}}{ Y_{\text{пр}}}}
+\end{equation}
+Пусть $h$ -- коэффициент отношения расстояния от центра координат до пересечения прямой, на которой лежит центр координат и центр препятствия, и траектории мяча к расстоянию от начала координат до центра препятствия.
+\begin{equation}
+OO' = \sqrt{ X_{\text{пр}}^2 + Y_{\text{пр}}^2}
+\end{equation}
+\begin{equation}
+BC^2 = \left( X_{\text{пр}} h \right)^2 + \left( Y_0 - Y_{\text{пр}} h \right)^2
+\end{equation}
+\begin{equation}
+BC^2 =  Y_0^2
+\end{equation}
+\begin{equation}
+h = \frac{2 Y_0  Y_{\text{пр}}}{X_{\text{пр}}^2 +  Y_{\text{пр}}^2 }
+\end{equation}
+\begin{equation}
+\phi = 2 \alpha, 
+\end{equation}
+где $\phi = \angle OBC$, $\alpha = \angle OBK$
+\begin{equation}
+\sin \alpha = \frac{OO' h}{2 Y_0}
+\end{equation}
+\begin{equation}
+\phi = 2 \arcsin \alpha
+\end{equation}
+Пусть $S$ -- длина траектории до пересечения объектом прямой, соединяющей центр координат и центр препятствия.
 
-
-
+\begin{equation}
+S = \phi Y_0 =  Y_0  2 \arcsin \alpha =  Y_0  2 \arcsin \frac{ \sqrt{ X_{\text{пр}}^2 + Y_{\text{пр}}^2} h}{2 Y_0}
+\end{equation}
+Мяч находится в поле тяжести, по оси $Z$ ускорение равно $g$, соотвественно, время полета $t = 2 \frac{v_z}{g}$, $v_z$ -- начальная скорость по вертикали.\\
+Найдем угловую скорость, для которой выполняется нужное соотношение с минимальной линейной скоростью мяча, при которой он сможет преодолеть необходимое расстояние.
 
 \section{Моделирование процесса}
 \subsection{Общие сведения}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  28 JUN 2023 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  28 JUN 2023 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1388,17 +1388,23 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 271--283
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 315--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--283
+Underfull \hbox (badness 10000) in paragraph at lines 315--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--283
+Underfull \hbox (badness 10000) in paragraph at lines 315--327
 
  []
 
@@ -1407,36 +1413,36 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[5]
-<./graphics/xy_10_5_10_30.png, id=97, 425.59pt x 281.05pt>
+[6]
+<./graphics/xy_10_5_10_30.png, id=115, 425.59pt x 281.05pt>
 File: ./graphics/xy_10_5_10_30.png Graphic file (type png)
 <use ./graphics/xy_10_5_10_30.png>
-Package pdftex.def Info: ./graphics/xy_10_5_10_30.png  used on input line 290.
+Package pdftex.def Info: ./graphics/xy_10_5_10_30.png  used on input line 334.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./graphics/xz_10_5_10_30.png, id=99, 425.59pt x 281.05pt>
+<./graphics/xz_10_5_10_30.png, id=117, 425.59pt x 281.05pt>
 File: ./graphics/xz_10_5_10_30.png Graphic file (type png)
 <use ./graphics/xz_10_5_10_30.png>
-Package pdftex.def Info: ./graphics/xz_10_5_10_30.png  used on input line 296.
+Package pdftex.def Info: ./graphics/xz_10_5_10_30.png  used on input line 340.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./graphics/yz_10_5_10_30.png, id=100, 425.59pt x 281.05pt>
+<./graphics/yz_10_5_10_30.png, id=118, 425.59pt x 281.05pt>
 File: ./graphics/yz_10_5_10_30.png Graphic file (type png)
 <use ./graphics/yz_10_5_10_30.png>
-Package pdftex.def Info: ./graphics/yz_10_5_10_30.png  used on input line 302.
+Package pdftex.def Info: ./graphics/yz_10_5_10_30.png  used on input line 346.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./graphics/xyz_10_5_10_30.png, id=101, 243.91125pt x 239.89626pt>
+<./graphics/xyz_10_5_10_30.png, id=119, 243.91125pt x 239.89626pt>
 File: ./graphics/xyz_10_5_10_30.png Graphic file (type png)
 <use ./graphics/xyz_10_5_10_30.png>
-Package pdftex.def Info: ./graphics/xyz_10_5_10_30.png  used on input line 308.
+Package pdftex.def Info: ./graphics/xyz_10_5_10_30.png  used on input line 352.
 
 (pdftex.def)             Requested size: 258.20877pt x 253.95937pt.
 
@@ -1447,69 +1453,69 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[6]
-<./graphics/xy_10_5_10_10.png, id=106, 425.59pt x 281.05pt>
+[7]
+<./graphics/xy_10_5_10_10.png, id=126, 425.59pt x 281.05pt>
 File: ./graphics/xy_10_5_10_10.png Graphic file (type png)
 <use ./graphics/xy_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/xy_10_5_10_10.png  used on input line 315.
+Package pdftex.def Info: ./graphics/xy_10_5_10_10.png  used on input line 359.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./graphics/xz_10_5_10_10.png, id=107, 425.59pt x 281.05pt>
+<./graphics/xz_10_5_10_10.png, id=127, 425.59pt x 281.05pt>
 File: ./graphics/xz_10_5_10_10.png Graphic file (type png)
 <use ./graphics/xz_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/xz_10_5_10_10.png  used on input line 321.
+Package pdftex.def Info: ./graphics/xz_10_5_10_10.png  used on input line 365.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./graphics/yz_10_5_10_10.png, id=108, 425.59pt x 281.05pt>
+<./graphics/yz_10_5_10_10.png, id=128, 425.59pt x 281.05pt>
 File: ./graphics/yz_10_5_10_10.png Graphic file (type png)
 <use ./graphics/yz_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/yz_10_5_10_10.png  used on input line 327.
+Package pdftex.def Info: ./graphics/yz_10_5_10_10.png  used on input line 371.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./graphics/xyz_10_5_10_10.png, id=109, 243.91125pt x 240.9pt>
+<./graphics/xyz_10_5_10_10.png, id=129, 243.91125pt x 240.9pt>
 File: ./graphics/xyz_10_5_10_10.png Graphic file (type png)
 <use ./graphics/xyz_10_5_10_10.png>
-Package pdftex.def Info: ./graphics/xyz_10_5_10_10.png  used on input line 333.
+Package pdftex.def Info: ./graphics/xyz_10_5_10_10.png  used on input line 377.
 
 (pdftex.def)             Requested size: 258.20877pt x 255.02194pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./graphics/xy_10_5_10_0.png, id=110, 425.59pt x 281.05pt>
+<./graphics/xy_10_5_10_0.png, id=130, 425.59pt x 281.05pt>
 File: ./graphics/xy_10_5_10_0.png Graphic file (type png)
 <use ./graphics/xy_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/xy_10_5_10_0.png  used on input line 340.
+Package pdftex.def Info: ./graphics/xy_10_5_10_0.png  used on input line 384.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./graphics/xz_10_5_10_0.png, id=111, 425.59pt x 281.05pt>
+<./graphics/xz_10_5_10_0.png, id=131, 425.59pt x 281.05pt>
 File: ./graphics/xz_10_5_10_0.png Graphic file (type png)
 <use ./graphics/xz_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/xz_10_5_10_0.png  used on input line 346.
+Package pdftex.def Info: ./graphics/xz_10_5_10_0.png  used on input line 390.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./graphics/yz_10_5_10_0.png, id=112, 425.59pt x 281.05pt>
+<./graphics/yz_10_5_10_0.png, id=132, 425.59pt x 281.05pt>
 File: ./graphics/yz_10_5_10_0.png Graphic file (type png)
 <use ./graphics/yz_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/yz_10_5_10_0.png  used on input line 352.
+Package pdftex.def Info: ./graphics/yz_10_5_10_0.png  used on input line 396.
 (pdftex.def)             Requested size: 258.20877pt x 170.5225pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./graphics/xyz_10_5_10_0.png, id=113, 243.91125pt x 241.90375pt>
+<./graphics/xyz_10_5_10_0.png, id=133, 243.91125pt x 241.90375pt>
 File: ./graphics/xyz_10_5_10_0.png Graphic file (type png)
 <use ./graphics/xyz_10_5_10_0.png>
-Package pdftex.def Info: ./graphics/xyz_10_5_10_0.png  used on input line 358.
+Package pdftex.def Info: ./graphics/xyz_10_5_10_0.png  used on input line 402.
 (pdftex.def)             Requested size: 258.20877pt x 256.08453pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1519,37 +1525,37 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[7 <./graphics/xy_10_5_10_30.png> <./graphics/xz_10_5_10_30.png>]
+[8 <./graphics/xy_10_5_10_30.png> <./graphics/xz_10_5_10_30.png>]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[8 <./graphics/yz_10_5_10_30.png> <./graphics/xyz_10_5_10_30.png>]
+[9 <./graphics/yz_10_5_10_30.png> <./graphics/xyz_10_5_10_30.png>]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[9 <./graphics/xy_10_5_10_10.png> <./graphics/xz_10_5_10_10.png>]
+[10 <./graphics/xy_10_5_10_10.png> <./graphics/xz_10_5_10_10.png>]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[10 <./graphics/yz_10_5_10_10.png> <./graphics/xyz_10_5_10_10.png>]
+[11 <./graphics/yz_10_5_10_10.png> <./graphics/xyz_10_5_10_10.png>]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[11 <./graphics/xy_10_5_10_0.png> <./graphics/xz_10_5_10_0.png>]
+[12 <./graphics/xy_10_5_10_0.png> <./graphics/xz_10_5_10_0.png>]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[12 <./graphics/yz_10_5_10_0.png> <./graphics/xyz_10_5_10_0.png>]
+[13 <./graphics/yz_10_5_10_0.png> <./graphics/xyz_10_5_10_0.png>]
 (./physic_project.aux)
  ***********
 LaTeX2e <2023-06-01>
@@ -1559,8 +1565,8 @@ Package rerunfilecheck Info: File `physic_project.out' has not changed.
 (rerunfilecheck)             Checksum: B55CB8D7159BA63063B543CAA44548BD;2233.
  ) 
 Here is how much of TeX's memory you used:
- 53136 strings out of 475734
- 1314964 string characters out of 5786229
+ 53149 strings out of 475734
+ 1315127 string characters out of 5786229
  2012788 words of memory out of 5000000
  73202 multiletter control sequences out of 15000+600000
  536155 words of font info for 87 fonts, out of 8000000 for 9000
@@ -1570,29 +1576,32 @@ Here is how much of TeX's memory you used:
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/c
-m-super/sfbi1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sf
-bx1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
-><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texli
-ve/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2023/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/f
-onts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1
-/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm
--super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfr
-m1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb>
-<c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texliv
-e/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on physic_project.pdf (12 pages, 537401 bytes).
+ype1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.
+pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi10
+00.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:
+/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-
+dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2023/texmf-dist/fonts
+/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
+er/sfrm0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm100
+0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/20
+23/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb><c:/texlive/2023/texmf-d
+ist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/
+type1/public/cm-super/sfti1200.pfb>
+Output written on physic_project.pdf (13 pages, 575534 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
  142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
