@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
-from math import sin, pi, radians, cos, sqrt, acos, asin
+from math import sin, pi, radians, cos, sqrt, acos, asin, atan
 import numpy as np
 import copy
 
@@ -70,11 +70,18 @@ def F_poisk(Xpr, Ypr, Rpr, R, p, m, v_z, g):
     if Xpr >= 0:
         S = Yo * 2 * asin((KOF * sqrt(Xpr**2 + Ypr**2))/(2 * Yo))
     else:
-        S = 2 * pi * Yo / ( Yo * 2 * asin((KOF * sqrt(Xpr**2 + Ypr**2))/(2 * Yo)))
+        S = (2 * pi * Yo) - ( Yo * 2 * asin((KOF * sqrt(Xpr**2 + Ypr**2))/(2 * Yo)))
     Vmin = (S * g) / (2 * v_z)
     Wvmin = Vmin/ Deg
     return Yo, Deg, KOF, S, Vmin, Wvmin
 
+
+''''def granitsa(Vmin, v_z, g, p, R, m, Ypr, Xpr):
+    T = v_z * 2 / g
+    S = Vmin * T
+    Yo = S/ (2 * atan(Ypr/Xpr))
+    w = (Vmin * m * 3) / (pi * p * R**3 * Yo)
+    return w'''''
 
 def constructor(lT, lX, lXPrim, lY, lYPrim, lZ, lZPrim, dt, C, R, p, v_1, wz, m, g, alpha):
     while lZ[-1] >= 0:
@@ -97,10 +104,13 @@ Rpr = int(input())
 print('Введите начальную скорость по вертикали')
 v_z = int(input())
 
+
+#tyu = granitsa(2.9, v_z, g, p, R, m, Ypr, Xpr)
+#print(tyu)
 Poisk = F_poisk(Xpr, Ypr, Rpr, R, p, m, v_z, g)
 lXPrim_1 = [Poisk[4]]
 lZPrim = [v_z]
-
+print(Poisk)
 
 Tuple = constructor(lT, lX, lXPrim_1, lY, lYPrim, lZ, lZPrim, dt, C, R, p, Poisk[4], Poisk[5], m, g, alpha)
 
@@ -113,17 +123,20 @@ plt.title('Множество значений')
 x = np.linspace(0, 20, 50)
 y = x * 1/Poisk[1]
 plt.plot(x, y)
-yy = np.linspace(0, 25, 50)
-xx = Poisk[4] + yy* 0
-plt.plot(xx, yy, "r--")
+'''yy = np.linspace(1, 4 * 25, 50)
+xx = granitsa(yy, v_z, g, p, R, m, Ypr, Xpr)
+plt.plot(xx, yy, "r--")'''
 plt.grid(which='major')
 plt.show()
 
-plt.axis([-2, 20, -1, 25])
+plt.axis([-abs(2 * Xpr), abs(2 * Xpr), -abs(2 * Ypr), abs(2 * Ypr)])
 # добавляем подписи к осям и заголовок диаграммы
 plt.xlabel('x, м', fontsize=16)
 plt.ylabel('y, м', fontsize=16)
 plt.title('Траектория полета мяча в плоскости XY')
+x = np.linspace(0, 3 * Xpr, 500)
+y = x * Ypr/Xpr
+plt.plot(x, y, "r--")
 plt.plot(Tuple[1], Tuple[3])
 plt.grid(which='major')
 # включаем дополнительную сетку
