@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
-from math import sin,pi, radians, cos, sqrt
+from math import *
 from mpl_toolkits.mplot3d import Axes3D
+import copy
 
 v_x = 10
-v_y =5
+v_y = 5
 v = sqrt(v_x**2+v_y**2)
 v_z = 10
 
-C = 0.51   # коэффициент подъемной силы (0.45 для футбольного мяча) (0.51 для теннисного мяча)
-R = 0.0325      # радиус сферы (м) (0.11 для футбольного мяча) (0.0325 для теннисного мяча)
-m = 0.055      # масса мяча (кг) (0.430 для футбольного мяча) (0.055 для теннисного мяча)
+C = 0.   # коэффициент подъемной силы (0.45 для футбольного мяча) (0.51 для теннисного мяча)
+R = 0.11      # радиус сферы (м) (0.11 для футбольного мяча) (0.0325 для теннисного мяча)
+m = 0.430      # масса мяча (кг) (0.430 для футбольного мяча) (0.055 для теннисного мяча)
 p = 1.225     # плотность воздуха (кг/м^3)
 
-w_z = 50   # скорость мяча угловая вдоль оси z
+w_z = 30 # скорость мяча угловая вдоль оси z
 alpha = pi/2      # Угол между v и w
 w_x = w_y = 0.0			
 g = 9.81
@@ -22,7 +23,7 @@ g = 9.81
 #ysecond = -0.5*C*pi*(R**2)*p*v*yprim/m+0.5*pi*(R**3)*p*sin(alpha)*(wz*xprim-wx*zprim)/m = 0
 #zsecond = -g-0.5*C*pi*(R**2)*p*v*zprim/m+0.5*pi*(R**3)*p*sin(alpha)*(wx*yprim-wy*xprim)/m
 
-dt = 0.1
+dt = 0.001
 lT=[0]
 lX=[0]
 lXPrim=[v_x]
@@ -82,19 +83,22 @@ def constructor(lT,lX,lXPrim,lY,lYPrim,lZ,lZPrim,dt,C, R, p, v, wz, m, g, alpha)
 
 
 Tuple = constructor(lT,lX,lXPrim,lY,lYPrim,lZ,lZPrim,dt,C, R, p, v, w_z, m, g, alpha)
-plt.axis([-2,20,-1,25])
+plt.axis([-1,8,-1,20])
 # добавляем подписи к осям и заголовок диаграммы
 plt.xlabel('x, м', fontsize=16)
 plt.ylabel('y, м', fontsize=16)
 plt.title('Проекция траектории полета мяча в плоскости XY')
 plt.plot(Tuple[1],Tuple[3])
+'''c = plt.Circle((2, 3), radius=1)
+plt.gca().add_artist(c)
+'''
 plt.grid(which='major')
 # включаем дополнительную сетку
 plt.grid(which='minor', linestyle=':')
 plt.tight_layout()
 plt.show()
 
-plt.axis([0,20,-2,10])
+plt.axis([0,8,-2,6])
 plt.xlabel('x, м', fontsize=16)
 plt.ylabel('z, м', fontsize=16)
 plt.title('Проекция траектории полета мяча в плоскости XZ')
@@ -119,6 +123,16 @@ plt.show()
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot(Tuple[1], Tuple[3], Tuple[5], label='parametric curve')
+
+def finder(x_fst, y_fst, r_barier, R_sph, p, m, vel, g):
+    Yo = (x_fst**2 + y_fst**2 -  r_barier**2)/((y_fst - r_barier) * 2) 
+    Deg = (8 * pi *  R_sph**3 * p * Yo)/ (3 * m)
+    KOF = (2 * Yo * y_fst)/(x_fst**2 + y_fst**2)
+    S = Yo * 2 * asin((KOF * sqrt(x_fst**2 + y_fst**2))/(2 * Yo))
+    Vmin = (S * g) / (2 * vel)   
+    Wvmin = Vmin/ Deg
+    return Yo, Deg, KOF, S, Vmin, Wvmin
+
                   
              
                

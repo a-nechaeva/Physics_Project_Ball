@@ -1,9 +1,11 @@
 \documentclass[a5paper, 10pt]{article}
 
 % Текст
+\usepackage{listings}
 \usepackage[utf8]{inputenc} % UTF-8 кодировка
 \usepackage[russian]{babel} % Русский язык
 \usepackage{indentfirst} % красная строка в первом параграфе в главе
+\renewcommand{\lstlistingname}{Листинг}
 % Отображение страниц
 \usepackage{geometry} % размеры листа и отступов
 \geometry{
@@ -276,8 +278,9 @@ a_n = \frac{F}{m} = \frac{8\pi}{3m} \rho \omega v R^3
 2. Для эксперимента с заданным препятствием выводятся подходящие значения угловой и линейных скоростей, которые необходимо задать, чтобы обойти препятствие\\
 
 
-\subsection{Написание программы}
-Программа написана на языке \textit{Python 3} с использованием библиотеки \textit{Manim}.
+\subsection{Результаты работы программы}
+Программа написана на языке \textit{Python 3} с использованием библиотеки \textit{Matplotlib}.
+
 
 
 \end{document}
