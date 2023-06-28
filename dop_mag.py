@@ -113,6 +113,7 @@ plt.plot(x, y)
 yy = np.linspace(0, 25, 50)
 xx = Poisk[4] + yy* 0
 plt.plot(xx, yy, "r--")
+plt.grid(which='major')
 plt.show()
 
 plt.axis([-2, 20, -1, 25])
