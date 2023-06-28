@@ -19,9 +19,6 @@ alpha = pi/2      # Угол между v и w
 w_x = w_y = 0.0			
 g = 9.81
 
-#xsecond = -0.5*C*pi*(R**2)*p*v*xprim/m+0.5*pi*(R**3)*p*sin(alpha)*(wy*zprim-wz*yprim)/m
-#ysecond = -0.5*C*pi*(R**2)*p*v*yprim/m+0.5*pi*(R**3)*p*sin(alpha)*(wz*xprim-wx*zprim)/m = 0
-#zsecond = -g-0.5*C*pi*(R**2)*p*v*zprim/m+0.5*pi*(R**3)*p*sin(alpha)*(wx*yprim-wy*xprim)/m
 
 dt = 0.001
 lT=[0]
@@ -30,7 +27,7 @@ lXPrim=[v_x]
 lZ=[0]
 lZPrim=[v_z]
 lY=[0]
-lYPrim=[v_y] # как выразить скорость?
+lYPrim=[v_y]
 
 
 
@@ -46,13 +43,13 @@ def z_second(x_first, y_first, z_first, C, R, p, v, w_z, m, g, alpha):
     return -g
   
 
-def XprimSuiv(x_first,XSecond, dt):
+def X_firstt(x_first,XSecond, dt):
     return x_first + dt * XSecond
 
-def YprimSuiv(y_first,YSecond, dt):
+def Y_firstt(y_first,YSecond, dt):
     return y_first + dt * YSecond
 
-def ZprimSuiv(z_first,ZSecond, dt):
+def Z_firstt(z_first,ZSecond, dt):
 	return z_first + dt * ZSecond
 
 def XSuiv(X,x_first, dt):
@@ -76,9 +73,9 @@ def constructor(lT,lX,lXPrim,lY,lYPrim,lZ,lZPrim,dt,C, R, p, v, wz, m, g, alpha)
         lX.append(XSuiv(lX[-1],lXPrim[-1],dt))
         lY.append(YSuiv(lY[-1],lYPrim[-1],dt))
         lZ.append(ZSuiv(lZ[-1],lZPrim[-1],dt))
-        lXPrim.append(XprimSuiv(lXPrim[-1],x_second(lXPrim[-1],lYPrim[-1],lZPrim[-1], C, R, p, v, wz, alpha), dt))
-        lYPrim.append(YprimSuiv(lYPrim[-1],y_second(lXPrim[-1],lYPrim[-1],lZPrim[-1], C, R, p, v, wz, alpha), dt))
-        lZPrim.append(ZprimSuiv(lZPrim[-1],z_second(lXPrim[-1],lYPrim[-1],lZPrim[-1], C, R, p, v, wz, m, g , alpha), dt))
+        lXPrim.append(X_firstt(lXPrim[-1],x_second(lXPrim[-1],lYPrim[-1],lZPrim[-1], C, R, p, v, wz, alpha), dt))
+        lYPrim.append(Y_firstt(lYPrim[-1],y_second(lXPrim[-1],lYPrim[-1],lZPrim[-1], C, R, p, v, wz, alpha), dt))
+        lZPrim.append(Z_firstt(lZPrim[-1],z_second(lXPrim[-1],lYPrim[-1],lZPrim[-1], C, R, p, v, wz, m, g , alpha), dt))
     return lT, lX, lXPrim,lY,lYPrim, lZ, lZPrim
 
 
@@ -123,15 +120,6 @@ plt.show()
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot(Tuple[1], Tuple[3], Tuple[5], label='parametric curve')
-
-def finder(x_fst, y_fst, r_barier, R_sph, p, m, vel, g):
-    Yo = (x_fst**2 + y_fst**2 -  r_barier**2)/((y_fst - r_barier) * 2) 
-    Deg = (8 * pi *  R_sph**3 * p * Yo)/ (3 * m)
-    KOF = (2 * Yo * y_fst)/(x_fst**2 + y_fst**2)
-    S = Yo * 2 * asin((KOF * sqrt(x_fst**2 + y_fst**2))/(2 * Yo))
-    Vmin = (S * g) / (2 * vel)   
-    Wvmin = Vmin/ Deg
-    return Yo, Deg, KOF, S, Vmin, Wvmin
 
                   
              

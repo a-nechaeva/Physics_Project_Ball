@@ -21,7 +21,7 @@ lZ = [0]
 lY = [0]
 
 v_y = 0
-lYPrim = [v_y]  # как выразить скорость?
+lYPrim = [v_y]
 
 
 def x_second(x_first, y_first, z_first, C, R, p, v, w_z, alpha):
